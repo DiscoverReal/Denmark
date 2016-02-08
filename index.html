@@ -168,8 +168,14 @@
 				<li><a href="#Statistics">Статистика</a></li>
 				<li><a href="#Team">Команда</a></li>
 				<li><a href="#Timeline">История</a></li>
-				<li><a href="#reviews-clients">Отзывы гостей</a></li>
+				<li><a href="#reviews-clients">Отзывы</a>
+					<ul class="dropdown">
+					  <li><a href="#reviews-clients">Отзывы гостей</a></li>
+					  <li><a href="#reviews-partners">Отзывы Партнёров</a></li>
+					</ul>
+				</li>
 
+				
 				
 				
               <!--
@@ -975,7 +981,7 @@
           <h4 class="timeline-title">Появился 2й технический пратнёр (звук)</h4>
         </div>
 		<div class="timeline-body">
-			<img src="images/work/event-logo.png" class="img-responsive" alt="">
+			<img src="images/team/partners/StartEventHere.png" class="img-responsive" alt="">
 		</div>
       </div>
     </li>
@@ -1361,6 +1367,147 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<style>
+body {
+    padding-top:20px
+}
+#custom_carousel .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+</style>
+<script>
+$(document).ready(function(ev){
+    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+      $('#custom_carousel .controls li.active').removeClass('active');
+      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+    })
+});
+</script>
+<div class="container-fluid" id="reviews-partners">
+
+	<div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
+	<p><br></p>
+	  <h2><strong>Отзывы Партнёров</strong></h2>
+	</div>
+
+    <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="7500">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="images/team/partners/Denmark.jpg" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h2">Посольство Дании</h4>
+                            <p>Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. </p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h2">Генеральный партнёр - ресторан G.Graf</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                        </div>
+                    </div>
+                </div>           
+            </div> 			
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="images/team/partners/StartEventHere.png" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h2">Технический партнёр по звуку - Start Event Here</h4>
+                            <p>Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. </p>
+                        </div>
+                    </div>
+                </div>            
+            </div> 
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h2">Технический партнёр по видеотехнике - Interactive Group</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                        </div>
+                    </div>
+                </div>           
+            </div> 
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h2">Спонсора конкурса на лучший вопрос - Bruuns Bazaar</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
+                        </div>
+                    </div>
+                </div>           
+            </div> 
+        <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <div class="controls">
+            <ul class="nav">
+                <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#"><img src="images/team/partners/Denmark_small.png"><small>Посольство Дании</small></a></li>
+				<li data-target="#custom_carousel" data-slide-to="1"><a href="#"><img src="images/team/partners/G.Graf_small.png"><small>Ресторан G.Graf</small></a></li>
+				<li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="images/team/partners/StartEventHere_small.png"><small>Start Event Here</small></a></li>
+                <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="images/team/partners/Interactive_small.png"><small>Interactive Group</small></a></li>
+                <li data-target="#custom_carousel" data-slide-to="4"><a href="#"><img src="images/team/partners/Bruuns_Bazaar_small.png"><small>Bruuns Bazaar</small></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Carousel -->
+</div>	
 	
 	
 	
