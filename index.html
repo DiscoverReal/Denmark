@@ -481,12 +481,6 @@
 
 
 
-<style>
-.member-info p {
-	font-size: 15px;
-}
-</style>
-
 
 
 
@@ -496,12 +490,13 @@
 		
 
         <!-- Start Big Heading -->
-        <div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
+        <div class="page-header">
           <h2><strong>Команда</strong></h2>
         </div>
         <!-- End Big Heading -->
 
         <!-- Some Text -->
+		
         <p class="text-center">Нельзя рассказать о проекте, не сказав о реализовавшей его команде</p>
         <p class="text-center">Все члены нашей команды закончили курс "Fundamentals of Project Planning and Management" от Виргинского Университета (США) на базе Coursera.
 		<br>
@@ -886,7 +881,7 @@
           <h4 class="timeline-title">1-я слайд-концепция</h4>
         </div>
         <div class="timeline-body">
-			<img src="images/work/concept_fornatives.jpg" class="img-responsive" alt="">
+			<a href="#myModal1" role="button" data-toggle="modal"><img src="images/work/concept_fornatives.jpg" class="img-responsive" alt=""></a>			
         </div>
       </div>
     </li>
@@ -1183,30 +1178,7 @@
       </div>
     </li>
 	
-	<li class="timeline-inverted">
-      <div class="timeline-badge danger"><img src="images/icons/timeline/test.png" class="img-responsive" alt=""></div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">TEST CUSTOM ICON</h4>
-		  <p><small class="text-muted" style="color: #117ba5;"><i class="fa fa-clock-o"></i> 12 декабря 2015</small></p>
-        </div>
-        <div class="timeline-body">
-			<p>Тест кастомной иконки в Таймлайне</p>
-		</div>
-      </div>
-    </li>
-	<li class="timeline-inverted">
-      <div class="timeline-badge danger"><img src="images/icons/timeline/test50.png" class="img-responsive" alt=""></div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">TEST CUSTOM ICON</h4>
-		  <p><small class="text-muted" style="color: #117ba5;"><i class="fa fa-clock-o"></i> 12 декабря 2015</small></p>
-        </div>
-        <div class="timeline-body">
-			<p>Тест кастомной иконки в Таймлайне</p>
-		</div>
-      </div>
-    </li>
+
 	
 	
 	
@@ -1215,6 +1187,36 @@
     
   </ul>
 </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 10000000;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: red;font-size: 30px;">×</button>
+  </div>
+  <div class="modal-body">
+	<img src="images/work/concept_fornatives.jpg" class="img-responsive" alt="">
+  </div>
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -1303,7 +1305,7 @@
 	
 <div class="carousel-reviews broun-block" id="reviews-clients">
     <div class="container">
-		<div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
+		<div class="page-header">
           <h2><strong>Отзывы гостей о встрече</strong></h2>
         </div>
         <div class="row">
@@ -1474,7 +1476,7 @@ $(document).ready(function(ev){
 </script>
 <div class="container-fluid" id="reviews-partners">
 
-	<div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
+	<div class="page-header">
 	<p><br></p>
 	  <h2><strong>Отзывы Партнёров</strong></h2>
 	</div>
@@ -1592,7 +1594,7 @@ $(document).ready(function(){
 
 <div class="container" id="photo">
 
-	<div class="big-title text-center animated fadeInDown delay-01" data-animation="fadeInDown" data-animation-delay="01">
+	<div class="page-header">
 	<p><br></p>
 	  <h2><strong>Фото</strong></h2>
 	</div>
