@@ -1196,24 +1196,34 @@
 	
 	
 	
+
 	
 	
-<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 10000000;">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: red;font-size: 30px;">×</button>
+	
+	
+	<!-- HTML-код модального окна -->
+<div id="myModal1" class="modal fade" style="z-index: 10000000;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">1-я слайд-концепция</h4>
+      </div>
+      <!-- Основное содержимое модального окна -->
+      <div class="modal-body">
+        <img src="images/work/concept_fornatives.jpg" class="img-responsive" alt="">
+      </div>
+      <!-- Футер модального окна -->
+    </div>
   </div>
-  <div class="modal-body">
-	<img src="images/work/concept_fornatives.jpg" class="img-responsive" alt="">
-  </div>
-</div>	
+</div>
 	
-	
-	
-	
-	
-	
-	
-	
+	<script>
+  $(document).ready(function() {
+    $("#myModal1").modal('show');
+  });
+</script>
 	
 	
 	
