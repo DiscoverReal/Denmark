@@ -450,14 +450,14 @@ $(document).ready(function ($) {
 			changeHeaderOn = 100;
 			document.querySelector( 'header' );
 			
-		function init() {
+		/*function init() {
 			window.addEventListener( 'scroll', function() {
 				if( !didScroll ) {
 					didScroll = true;
 					setTimeout( scrollPage, 250 );
 				}
 			}, false );
-		}
+		}*/
 		
 		/*function scrollPage() {
 			var sy = scrollY();
@@ -494,7 +494,7 @@ $(document).ready(function ($) {
 			return window.pageYOffset || docElem.scrollTop;
 		}
 		
-		init();
+		//init();
 		
 		
 		
