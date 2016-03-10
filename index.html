@@ -329,7 +329,7 @@
 	
 
 
-<div style="background-color: #951a1f; padding-top: 30px;" id="Statistics">
+<div style="background-color: #951a1f; margin-top: 30px;" id="Statistics">
 	<div class="container">
 		<div class="row">
 		
@@ -1563,13 +1563,13 @@ blockquote em{
 body {
     padding-top:20px
 }
-#custom_carousel .item {
+#custom_carousel .item, #custom_carousel_2 .item {
 
     color:#000;
     background-color:#eee;
     padding:20px 0;
 }
-#custom_carousel .controls{
+#custom_carousel .controls, #custom_carousel_2 .controls{
     overflow-x: auto;
     overflow-y: hidden;
     padding:0;
@@ -1579,16 +1579,16 @@ body {
     position: relative;
     background:#ddd
 }
-#custom_carousel .controls li {
+#custom_carousel .controls li, #custom_carousel_2 .controls li {
     display: table-cell;
     width: 1%;
     max-width:90px
 }
-#custom_carousel .controls li.active {
+#custom_carousel .controls li.active, #custom_carousel_2 .controls li.active {
     background-color:#eee;
     border-top:3px solid orange;
 }
-#custom_carousel .controls a small {
+#custom_carousel .controls a small, #custom_carousel_2 .controls a small {
     overflow:hidden;
     display:block;
     font-size:10px;
@@ -1601,6 +1601,12 @@ $(document).ready(function(ev){
     $('#custom_carousel').on('slide.bs.carousel', function (evt) {
       $('#custom_carousel .controls li.active').removeClass('active');
       $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+    })
+});
+$(document).ready(function(ev){
+    $('#custom_carousel_2').on('slide.bs.carousel', function (evt) {
+      $('#custom_carousel_2 .controls li.active').removeClass('active');
+      $('#custom_carousel_2 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
     })
 });
 </script>
@@ -1619,7 +1625,7 @@ $(document).ready(function(ev){
                     <div class="row">
                         <div class="col-md-3"><img src="images/team/partners/Denmark.jpg" class="img-responsive"></div>
                         <div class="col-md-9">
-                            <h4 class="h2">Посольство Дании</h4>
+                            <h4 class="h4">Посольство Дании</h4>
                             <p>Посольство неизменно поддерживает культурные проекты и мероприятия, имеющие просветительский характер и позволяющие российской аудитории познакомиться с разными сторонами жизни современной Дании.</p>
 							<p>Впечатления положительные, и мы будем рады продолжению этого сотрудничества.</p>
 						</div>
@@ -1631,7 +1637,7 @@ $(document).ready(function(ev){
                     <div class="row">
                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
                         <div class="col-md-9">
-                            <h4 class="h2">Генеральный партнёр - ресторан G.Graf</h4>
+                            <h4 class="h4">Генеральный партнёр - ресторан G.Graf</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
                         </div>
                     </div>
@@ -1642,7 +1648,7 @@ $(document).ready(function(ev){
                     <div class="row">
                         <div class="col-md-3"><img src="images/team/partners/StartEventHere.png" class="img-responsive"></div>
                         <div class="col-md-9">
-                            <h4 class="h2">Технический партнёр по звуку - Start Event Here</h4>
+                            <h4 class="h4">Технический партнёр по звуку - Start Event Here</h4>
                             <p>Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. Текст отзыва. </p>
                         </div>
                     </div>
@@ -1653,7 +1659,7 @@ $(document).ready(function(ev){
                     <div class="row">
                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
                         <div class="col-md-9">
-                            <h4 class="h2">Технический партнёр по видеотехнике - Interactive Group</h4>
+                            <h4 class="h4">Технический партнёр по видеотехнике - Interactive Group</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
                         </div>
                     </div>
@@ -1664,13 +1670,37 @@ $(document).ready(function(ev){
                     <div class="row">
                         <div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
                         <div class="col-md-9">
-                            <h4 class="h2">Спонсора конкурса на лучший вопрос - Bruuns Bazaar</h4>
+                            <h4 class="h4">Спонсора конкурса на лучший вопрос - Bruuns Bazaar</h4>
                             <p>У нас давние отношения с Посольством Дании. Мы всегда рады принять участие в мероприятиях, связанных со Скандинавией, а особенно в мероприятиях, связанных с развитием бизнеса в России. В целом, готовы поддерживать мероприятия с интересными решениями и аудиторией.</p>
                         </div>
                     </div>
                 </div>           
             </div> 
-        <!-- End Item -->
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="images/team/speakers/Helena_350_250.jpg" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h4">Хелена Боллесен, Докладчик</h4>
+                            <p>I was positively surprised by the level of professionalisme and consistency of the way you communicated on the different platforms.</p>
+							<p>It was good and I think people was pleased. I do not know if it would be possible to make people pay for an event like this. My guess will be that it will be best to get it overall financed buy the professional partners</p>
+						</div>
+                    </div>
+                </div>            
+            </div>
+            <div class="item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3"><img src="images/team/speakers/Peater_350_250.jpg" class="img-responsive"></div>
+                        <div class="col-md-9">
+                            <h4 class="h4">Петер Расмуссен, Докладчик</h4>
+                            <p>It was fine.</p>
+							<p>I think the event nicely promoted Denmark to the group of people there.</p>
+                        </div>
+                    </div>
+                </div>           
+            </div> 
+			<!-- End Item -->
         </div>
         <!-- End Carousel Inner -->
         <div class="controls">
@@ -1680,6 +1710,8 @@ $(document).ready(function(ev){
 				<li data-target="#custom_carousel" data-slide-to="2"><a href="#"><img src="images/team/partners/StartEventHere_small.png"><small>Start Event Here</small></a></li>
                 <li data-target="#custom_carousel" data-slide-to="3"><a href="#"><img src="images/team/partners/Interactive_small.png"><small>Interactive Group</small></a></li>
                 <li data-target="#custom_carousel" data-slide-to="4"><a href="#"><img src="images/team/partners/Bruuns_Bazaar_small.png"><small>Bruuns Bazaar</small></a></li>
+                <li data-target="#custom_carousel" data-slide-to="5"><a href="#"><img src="images/team/speakers/Helena_small.jpg"><small>Хелена Боллесен</small></a></li>
+				<li data-target="#custom_carousel" data-slide-to="6"><a href="#"><img src="images/team/speakers/Peater_small.jpg"><small>Петер Расмуссен</small></a></li>
             </ul>
         </div>
     </div>
